@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        working-directory: expense-tracker
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/expense-tracker:latest .
+
 
 
 
